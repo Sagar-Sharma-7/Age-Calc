@@ -77,7 +77,9 @@ input::-webkit-calendar-picker-indicator {
     border-radius: 50%;
 }
 input::-webkit-datetime-edit{
-    border-bottom: 1px solid #56F85B;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #222;
     height: 6vh;
 }
 
