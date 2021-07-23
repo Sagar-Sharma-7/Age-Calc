@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .container, .box-1, .box-2{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    font-family: 'Langar', cursive;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-color: #222222;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #56F85B;
+    text-align: center;
+}
+
+.box-1{
+    width: 90vw;
+    height: 25vh;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset 9px 9px 18px #191919, 
+    inset -9px -9px 18px #2b2b2b;
+}
+
+.box-2{
+    width: 90vw;
+    height: 60vh;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: inset 9px 9px 18px #191919, 
+    inset -9px -9px 18px #2b2b2b;
+}
+
+#heading1{
+    font-size: 2.8rem;
+    margin: 0.5vw;
+}
+
+#heading2{
+    font-size: 2rem;
+}
+
+#birthDate{
+    width: 90%;
+    font-family: inherit;
+    background-color: transparent;
+    color: #fff;
+    text-align: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+input::-webkit-calendar-picker-indicator {
+    background-color: #56F85B;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+input::-webkit-datetime-edit{
+    background-color: #fff;
+    border-radius: 30px;
+    color: #222;
+    height: 6vh;
+}
+
+button{
+    width: 50vw;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #222222;
+    padding: 1vh;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+button:hover{
+    border-radius: 50px;
+    width: 80vw;
+}
+
+footer{
+    color: #fff;
+}
+
+.fa-heart{
+    color: red;
+}
+
+footer a{
+    color: #56F85B;
+    text-decoration: none;
+}
+
+@media all and (max-width: 500px){
+    #heading1{
+        font-size: 2rem;
+    }
+}
