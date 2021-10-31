@@ -1,0 +1,52 @@
+
+@mixin flex($jus: center, $alg: center){
+    display: flex;
+    justify-content: $jus;
+    align-items: $alg;
+}
+@mixin dimension($ln, $hg){
+    width: $ln;
+    height: $hg;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    @media (min-width: 700px) {
+      font-size: calc(10px + 0.5vw);
+    }
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #7C40FF;
+}
+
+
+
+header{
+    border: 2px solid green;
+    @include dimension(100vw, 30vh);
+    @include flex();
+    flex-direction: column;
+    background-color: #1e1e1e;
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.container{
+    border: 2px solid blue;
+    input{
+        border: 2px solid green;
+    }
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: calc(10px + 0.5vw);
+  }
+}
+
+body {
+  color: #7C40FF;
+}
+
+header {
+  border: 2px solid green;
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1e1e1e;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+.container {
+  border: 2px solid blue;
+}
+
+.container input {
+  border: 2px solid green;
+}
+/*# sourceMappingURL=style.css.map */
