@@ -23,7 +23,7 @@ body {
 header {
   border: 2px solid green;
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,9 +50,45 @@ header p {
 
 .container {
   border: 2px solid blue;
+  width: 100vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container input {
-  border: 2px solid green;
+  width: 90vw;
+  height: 10vh;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  color: #7C40FF;
+  text-align: center;
+  border-bottom: 3px double #7C40FF;
+  padding: 0 8vw;
+}
+
+.container input::-webkit-calendar-picker-indicator {
+  background-color: #56F85B;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.container input::-webkit-datetime-edit {
+  background-color: #fff;
+  border-radius: 30px;
+  color: #222;
+  padding: 1vh 0;
 }
 /*# sourceMappingURL=style.css.map */
