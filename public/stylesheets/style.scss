@@ -25,18 +25,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    color: #7C40FF;
-}
-
 
 
 header{
-    border: 2px solid green;
     @include dimension(100vw, 35vh);
     @include flex();
     flex-direction: column;
     background-color: #1e1e1e;
+    color: #7C40FF;
     h1{
         font-size: 4rem;
     }
@@ -46,8 +42,7 @@ header{
 }
 
 .container{
-    border: 2px solid blue;
-    @include dimension(100vw, 50vh);
+    @include dimension(100vw, 55vh);
     @include flex(space-evenly,);
     flex-direction: column;
     input{
@@ -85,6 +80,22 @@ header{
         border: 1px solid #1e1e1e;
         &:hover{
             background-color: #1e1e1e;
+        }
+    }
+}
+
+footer{
+    background-color: #1e1e1e;
+    @include dimension(100vw, 10vh);
+    @include flex();
+    flex-direction: column;
+    a{
+        text-decoration: none;
+    }
+    p{
+        color: #fff;
+        i{
+            color: #ff0000;
         }
     }
 }
