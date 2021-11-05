@@ -70,4 +70,14 @@ header{
         color: #222;
         padding: 1vh 0;
     }
+    button{
+        @include dimension(50vw, auto);
+        padding: 1vh 0;
+        border: none;
+        outline: none;
+        background-color: #7C40FF;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }

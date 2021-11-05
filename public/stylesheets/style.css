@@ -91,4 +91,16 @@ header p {
   color: #222;
   padding: 1vh 0;
 }
+
+.container button {
+  width: 50vw;
+  height: auto;
+  padding: 1vh 0;
+  border: none;
+  outline: none;
+  background-color: #7C40FF;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
