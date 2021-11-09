@@ -29,11 +29,20 @@ cal.addEventListener("click", () => {
     const monthDays = ((month - birthMonth) * 31) - parseInt(Math.floor(month - birthMonth) / 2);
     const dateDays = day - birthDay;
 
+    const ageInMonths = ((year - birthYear) * 12) + (month - birthMonth);
     const ageInDays = yearDays + monthDays + dateDays;
-    console.log(ageInDays);
-
+    const ageInWeeks = ageInDays / 7;
     const ageInHours = ageInDays * 24;
     const ageInMin = ageInHours * 60;
     const AgeInSec = ageInMin * 60;
-    
+
+    // console.log(`month =  ${ageInMonths}, days = ${ageInDays}, hours = ${ageInHours}, min = ${ageInMin}, seconds = ${AgeInSec}`);
+    if (dob.value == ""){
+        console.log("First Type or select your Date of Birth");
+    }else if(ageInDays < 0){
+        console.log("Incorrect Date of Birth");
+    }else{
+        console.log(ageInDays);
+    }
+
 });

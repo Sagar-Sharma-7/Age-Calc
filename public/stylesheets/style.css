@@ -36,15 +36,21 @@ header {
           flex-direction: column;
   background-color: #1e1e1e;
   color: #7C40FF;
+  text-align: center;
 }
 
-header h1 {
+header .heading_section h1 {
   font-size: 4rem;
 }
 
-header p {
+header .heading_section p {
   font-size: 1.3rem;
   color: #fff;
+}
+
+header .hidden_section {
+  color: green;
+  border: 2px solid white;
 }
 
 .container {

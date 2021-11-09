@@ -33,12 +33,19 @@ header{
     flex-direction: column;
     background-color: #1e1e1e;
     color: #7C40FF;
-    h1{
-        font-size: 4rem;
+    text-align: center;
+    .heading_section{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.3rem;
+            color: #fff
+        }
     }
-    p{
-        font-size: 1.3rem;
-        color: #fff
+    .hidden_section{
+        color: green;
+        border: 2px solid white;
     }
 }
 
