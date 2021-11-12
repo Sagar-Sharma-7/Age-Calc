@@ -35,6 +35,7 @@ header{
     color: #7C40FF;
     text-align: center;
     .heading_section{
+        display: none;
         h1{
             font-size: 4rem;
         }
@@ -44,8 +45,16 @@ header{
         }
     }
     .hidden_section{
-        color: green;
-        border: 2px solid white;
+        @include dimension(100vw, 34vh);
+        @include flex(space-evenly);
+        flex-direction: column;
+        font-size: 1.2rem;
+        p{
+            color: #7C40FF;
+            span{
+                color: #fff
+            }
+        }
     }
 }
 

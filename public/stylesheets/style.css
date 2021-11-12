@@ -39,6 +39,10 @@ header {
   text-align: center;
 }
 
+header .heading_section {
+  display: none;
+}
+
 header .heading_section h1 {
   font-size: 4rem;
 }
@@ -49,8 +53,30 @@ header .heading_section p {
 }
 
 header .hidden_section {
-  color: green;
-  border: 2px solid white;
+  width: 100vw;
+  height: 34vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.2rem;
+}
+
+header .hidden_section p {
+  color: #7C40FF;
+}
+
+header .hidden_section p span {
+  color: #fff;
 }
 
 .container {
