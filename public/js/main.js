@@ -12,12 +12,18 @@ const hour_span = document.querySelector("#hours");
 const min_span = document.querySelector("#min");
 const sec_span = document.querySelector("#sec"); 
 
-
 // ttext content
 heading.innerHTML = "Age Calculator";
 sub_heading.innerHTML = "Get your age in different units";
 cal.innerHTML = "Calculate";
 github.innerHTML = "Contribute to my Github";
+
+
+$(document).ready(function() {
+    $(".hidden_section").css("display", "flex");
+    $(".hidden_section").slideUp(1);
+});
+
 
 // functions
 const date = new Date();
@@ -47,9 +53,23 @@ cal.addEventListener("click", () => {
     // console.log(`month =  ${ageInMonths}, days = ${ageInDays}, hours = ${ageInHours}, min = ${ageInMin}, seconds = ${AgeInSec}`);
     if (dob.value == ""){
         console.log("First Type or select your Date of Birth");
+        cal.style.backgroundColor = "red";
+        cal.innerHTML = "First Type or Select your Date of Birth."
+        setTimeout(() => {
+            $(".calculate").css("background-color", "#7C40FF");
+            cal.innerHTML = "Calculate";
+        }, 1500);
     }else if(ageInDays < 0){
         console.log("Incorrect Date of Birth");
+        cal.style.backgroundColor = "red";
+        cal.innerHTML = "Incorrect Date of Birth";
+        setTimeout(() => {
+            $(".calculate").css("background-color", "#7C40FF");
+            cal.innerHTML = "Calculate";
+        }, 1500);
     }else{
+        $(".heading_section").slideUp(150);
+        $(".hidden_section").slideDown(150);
         month_span.innerHTML = ageInMonths;
         week_span.innerHTML = ageInWeeks;
         day_span.innerHTML = ageInDays;
@@ -57,5 +77,4 @@ cal.addEventListener("click", () => {
         min_span.innerHTML = ageInMin;
         sec_span.innerHTML = AgeInSec;
     }
-
 });

@@ -34,8 +34,9 @@ header{
     background-color: #1e1e1e;
     color: #7C40FF;
     text-align: center;
+    border-top: 2px solid #7C40FF;
+    border-bottom: 2px solid #7C40FF;
     .heading_section{
-        display: none;
         h1{
             font-size: 4rem;
         }
@@ -46,7 +47,8 @@ header{
     }
     .hidden_section{
         @include dimension(100vw, 34vh);
-        @include flex(space-evenly);
+        display: none;
+        justify-content: space-evenly;
         flex-direction: column;
         font-size: 1.2rem;
         p{

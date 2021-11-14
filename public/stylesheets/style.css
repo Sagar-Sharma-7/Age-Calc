@@ -37,10 +37,8 @@ header {
   background-color: #1e1e1e;
   color: #7C40FF;
   text-align: center;
-}
-
-header .heading_section {
-  display: none;
+  border-top: 2px solid #7C40FF;
+  border-bottom: 2px solid #7C40FF;
 }
 
 header .heading_section h1 {
@@ -55,15 +53,10 @@ header .heading_section p {
 header .hidden_section {
   width: 100vw;
   height: 34vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
