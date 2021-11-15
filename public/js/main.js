@@ -74,12 +74,25 @@ cal.addEventListener("click", () => {
     }else{
         $(".heading_section").slideUp(150);
         $(".hidden_section").slideDown(150);
-        month_span.innerHTML = ageInMonths;
-        week_span.innerHTML = ageInWeeks;
-        day_span.innerHTML = ageInDays;
-        hour_span.innerHTML = ageInHours;
-        min_span.innerHTML = ageInMin;
-        sec_span.innerHTML = AgeInSec;
+        const animation = setInterval(() => {
+            month_span.innerHTML = Math.floor(Math.random() * 100);
+            week_span.innerHTML = Math.floor(Math.random() * 1000);
+            day_span.innerHTML = Math.floor(Math.random() * 10000);
+            hour_span.innerHTML = Math.floor(Math.random() * 100000);
+            min_span.innerHTML = Math.floor(Math.random() * 1000000);
+            sec_span.innerHTML = Math.floor(Math.random() * 10000000);
+        }, 1);
+
+        setTimeout(() => {
+            clearInterval(animation);
+             month_span.innerHTML = ageInMonths;
+            week_span.innerHTML = ageInWeeks;
+            day_span.innerHTML = ageInDays;
+            hour_span.innerHTML = ageInHours;
+            min_span.innerHTML = ageInMin;
+            sec_span.innerHTML = AgeInSec;
+        }, 1000);
+        
     };
 });
 
