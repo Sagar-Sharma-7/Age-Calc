@@ -53,24 +53,36 @@ cal.addEventListener("click", () => {
     // console.log(`month =  ${ageInMonths}, days = ${ageInDays}, hours = ${ageInHours}, min = ${ageInMin}, seconds = ${AgeInSec}`);
     if (dob.value == ""){
         console.log("First Type or select your Date of Birth");
-        cal.style.backgroundColor = "red";
+        cal.style.color = "red";
         cal.innerHTML = "First Type or Select your Date of Birth.";
-        $(".hidden_section").slideUp(450);
-        $(".heading_section").slideDown(450);
+        $(".hidden_section").slideUp(250);
+        $(".heading_section").slideDown(250);
+        sub_heading.innerHTML = "First Type or Select your Date of Birth";
+        sub_heading.style.color = "red";
+
         setTimeout(() => {
-            $(".calculate").css("background-color", "#7C40FF");
+            cal.style.color = "white";
             cal.innerHTML = "Calculate";
+            sub_heading.style.color = "white";
+            sub_heading.innerHTML = "Get your age in different units";
         }, 1500);
+
     }else if(ageInDays < 0){
         console.log("Incorrect Date of Birth");
-        cal.style.backgroundColor = "red";
+        cal.style.color = "red";
         cal.innerHTML = "Incorrect Date of Birth";
-        $(".hidden_section").slideUp(450);
-        $(".heading_section").slideDown(450);
+        sub_heading.innerHTML = "Incorrect Date of Birth";
+        sub_heading.style.color = "red";
+        $(".hidden_section").slideUp(250);
+        $(".heading_section").slideDown(250);
+
         setTimeout(() => {
-            $(".calculate").css("background-color", "#7C40FF");
+            cal.style.color = "white";
             cal.innerHTML = "Calculate";
+            sub_heading.style.color = "white";
+            sub_heading.innerHTML = "Get your age in different units";
         }, 1500);
+
     }else{
         $(".heading_section").slideUp(150);
         $(".hidden_section").slideDown(150);
@@ -92,10 +104,9 @@ cal.addEventListener("click", () => {
             min_span.innerHTML = ageInMin;
             sec_span.innerHTML = AgeInSec;
         }, 1000);
-        
     };
 });
 
 github.addEventListener("click", () =>{
-    window.open("https://github.com/Sagar-Sharma-7/Age-in-days")
+    window.open("https://github.com/Sagar-Sharma-7/Age-in-days");
 });
