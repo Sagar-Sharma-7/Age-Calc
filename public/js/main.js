@@ -54,7 +54,9 @@ cal.addEventListener("click", () => {
     if (dob.value == ""){
         console.log("First Type or select your Date of Birth");
         cal.style.backgroundColor = "red";
-        cal.innerHTML = "First Type or Select your Date of Birth."
+        cal.innerHTML = "First Type or Select your Date of Birth.";
+        $(".hidden_section").slideUp(450);
+        $(".heading_section").slideDown(450);
         setTimeout(() => {
             $(".calculate").css("background-color", "#7C40FF");
             cal.innerHTML = "Calculate";
@@ -63,6 +65,8 @@ cal.addEventListener("click", () => {
         console.log("Incorrect Date of Birth");
         cal.style.backgroundColor = "red";
         cal.innerHTML = "Incorrect Date of Birth";
+        $(".hidden_section").slideUp(450);
+        $(".heading_section").slideDown(450);
         setTimeout(() => {
             $(".calculate").css("background-color", "#7C40FF");
             cal.innerHTML = "Calculate";
@@ -76,5 +80,9 @@ cal.addEventListener("click", () => {
         hour_span.innerHTML = ageInHours;
         min_span.innerHTML = ageInMin;
         sec_span.innerHTML = AgeInSec;
-    }
+    };
+});
+
+github.addEventListener("click", () =>{
+    window.open("https://github.com/Sagar-Sharma-7/Age-in-days")
 });
