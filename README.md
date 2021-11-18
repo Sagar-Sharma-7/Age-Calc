@@ -48,3 +48,33 @@ div{
 
 -----
 
+## Contributions
+### Contributions are welcome! see [Contribution's Guide](https://github.com/Sagar-Sharma-7/Age-Calc/blob/main/CONTRIBUTING.md)
+
+----
+
+## Code of Conduct 
+<img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi"> 
+
+### Be nice. See our [code of conduct](https://github.com/Sagar-Sharma-7/Age-Calc/blob/main/CODE_OF_CONDUCT.md)
+
+
+<hr>
+
+ ## How to reach me?
+ [ ![ForTheBadge makes-people-smile](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:6969sagarsharma@gmail.com)
+ <hr>
+ <br>
+
+[![Follower](https://img.shields.io/github/followers/sagar-sharma-7?style=social)](https://github.com/Sagar-Sharma-7)
+ <hr>
+ <p float="left">
+
+[![ForTheBadge built-with-love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Sagar-Sharma-7)
+[ ![ForTheBadge makes-people-smile](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/Sagar-Sharma-7)
+
+</p>
+
+
+[![alttext](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sagar-Sharma-7)
+ 
