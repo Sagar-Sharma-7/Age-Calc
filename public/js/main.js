@@ -5,6 +5,7 @@ const cal = document.querySelector(".calculate");
 const github = document.querySelector("#github");
 
 // result span
+const year_span = document.querySelector("#years")
 const month_span = document.querySelector("#months");
 const week_span = document.querySelector("#weeks");
 const day_span = document.querySelector("#days");
@@ -49,6 +50,7 @@ cal.addEventListener("click", () => {
     const ageInHours = ageInDays * 24;
     const ageInMin = ageInHours * 60;
     const AgeInSec = ageInMin * 60;
+    const ageInYears = Math.floor(ageInMonths / 12)
 
     // console.log(`month =  ${ageInMonths}, days = ${ageInDays}, hours = ${ageInHours}, min = ${ageInMin}, seconds = ${AgeInSec}`);
     if (dob.value == ""){
@@ -87,6 +89,7 @@ cal.addEventListener("click", () => {
         $(".heading_section").slideUp(150);
         $(".hidden_section").slideDown(150);
         const animation = setInterval(() => {
+            year_span.innerHTML = Math.floor(Math.random() * 10);
             month_span.innerHTML = Math.floor(Math.random() * 100);
             week_span.innerHTML = Math.floor(Math.random() * 1000);
             day_span.innerHTML = Math.floor(Math.random() * 10000);
@@ -97,7 +100,8 @@ cal.addEventListener("click", () => {
 
         setTimeout(() => {
             clearInterval(animation);
-             month_span.innerHTML = ageInMonths;
+            year_span.innerHTML = ageInYears;
+            month_span.innerHTML = ageInMonths;
             week_span.innerHTML = ageInWeeks;
             day_span.innerHTML = ageInDays;
             hour_span.innerHTML = ageInHours;
